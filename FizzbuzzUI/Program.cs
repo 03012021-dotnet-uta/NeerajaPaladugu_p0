@@ -25,15 +25,15 @@ namespace FizzbuzzUI
 
         static void Main(string[] args){
 
-       Program p = new Program();
-        p.printJob();
+     //  Program p = new Program();
+       // p.printJob();
 
                              
             //for(int i = 1; i <= 1000; i++)
            // Console.WriteLine(i+((i%10==9) ? "\n" : " "));
            Console.WriteLine();
          
-          Console.WriteLine(" Num of sweet:" + p.sweetCount + "  Num of salty: " + p.saltyCount + "Num of sweetandsalty: " + p.sweet_SaltyCount +"" );
+          Console.WriteLine(" N of sweet:" + p.sweetCount + "  N of salty: " + p.saltyCount + "N of sweetandsalty: " + p.sweet_SaltyCount +"" );
          
         
                       
@@ -41,7 +41,7 @@ namespace FizzbuzzUI
         
        private  void printJob(){
 
-            for( int i = 1; i < 1001; i++){
+            for( int i = 0; i < 1000; i++){
 
                 if((i-1) % 10 == 0 ){
                     Console.WriteLine();
