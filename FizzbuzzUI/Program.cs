@@ -14,7 +14,7 @@
 
 using System;
 
-namespace FizzbuzzUI
+namespace SweetAndSaltyUI
       {
     class Program
     {
