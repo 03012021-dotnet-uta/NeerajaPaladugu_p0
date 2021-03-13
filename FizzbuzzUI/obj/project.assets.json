@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\neera\\revature\\project\\FizzBuzz\\FizzbuzzUI\\FizzbuzzUI.csproj",
+      "projectUniqueName": "C:\\Users\\neera\\revature\\project\\SweetansSalty\\FizzbuzzUI\\FizzbuzzUI.csproj",
       "projectName": "FizzbuzzUI",
-      "projectPath": "C:\\Users\\neera\\revature\\project\\FizzBuzz\\FizzbuzzUI\\FizzbuzzUI.csproj",
+      "projectPath": "C:\\Users\\neera\\revature\\project\\SweetansSalty\\FizzbuzzUI\\FizzbuzzUI.csproj",
       "packagesPath": "C:\\Users\\neera\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\neera\\revature\\project\\FizzBuzz\\FizzbuzzUI\\obj\\",
+      "outputPath": "C:\\Users\\neera\\revature\\project\\SweetansSalty\\FizzbuzzUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\neera\\AppData\\Roaming\\NuGet\\NuGet.Config"

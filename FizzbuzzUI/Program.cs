@@ -25,8 +25,8 @@ namespace FizzbuzzUI
 
         static void Main(string[] args){
 
-     //  Program p = new Program();
-       // p.printJob();
+      Program p = new Program();
+        p.printJob();
 
                              
             //for(int i = 1; i <= 1000; i++)
