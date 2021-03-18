@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfAPizza xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <APizza xsi:type="CustomPizza">
+    <Crust>
+      <Name />
+      <Price>0</Price>
+    </Crust>
+    <Size>
+      <Name />
+      <Price>0</Price>
+    </Size>
+    <Toppings>
+      <Topping>
+        <Name />
+        <Price>0</Price>
+      </Topping>
+      <Topping>
+        <Name />
+        <Price>0</Price>
+      </Topping>
+    </Toppings>
+    <Name>Custom Pizza</Name>
+  </APizza>
+  <APizza xsi:type="MeatPizza">
+    <Crust>
+      <Name />
+      <Price>0</Price>
+    </Crust>
+    <Size>
+      <Name />
+      <Price>0</Price>
+    </Size>
+    <Toppings>
+      <Topping>
+        <Name>Chicken</Name>
+        <Price>2</Price>
+      </Topping>
+    </Toppings>
+    <Name>Meat Pizza</Name>
+  </APizza>
+  <APizza xsi:type="VeggiePizza">
+    <Crust>
+      <Name />
+      <Price>0</Price>
+    </Crust>
+    <Size>
+      <Name />
+      <Price>0</Price>
+    </Size>
+    <Toppings>
+      <Topping>
+        <Name>Bell pepper</Name>
+        <Price>0.25</Price>
+      </Topping>
+      <Topping>
+        <Name>Mushrooms</Name>
+        <Price>0.25</Price>
+      </Topping>
+    </Toppings>
+    <Name>Veggie Pizza</Name>
+  </APizza>
+</ArrayOfAPizza>
