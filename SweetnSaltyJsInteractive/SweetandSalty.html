@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetandSalty</title>
+    <style>
+        input:invalid {
+            box-shadow: 0 0 5px 1px green;
+        }
+        
+        body {
+            background-color: coral;
+        }
+        
+        p::first-line {
+            color: #ff0000;
+            font-variant: small-caps;
+        }
+        
+        div.main {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Starter">
+        <h1> SweetandSalty</h1>
+
+        <p>The start and end of the range should be a least 200 apart and no more than 10,000 apart </p>
+
+
+
+        <input type="button" value="Start" class="startbutton">
+    </div>
+
+    <div class="main" visibility="hidden">
+        <h1>SweetandSalty</h1>
+
+        <div class="form">
+            <label for="startpoint">Starting Point: </label>
+            <input type="number" id="startpoint" class="startpoint" min="1" required>
+            <label for="endpoint">End Point: </label>
+            <input type="number" id="endpoint" class="endpoint" min="200" required>
+            <input type="submit" value="Submit numbers" class="numberSubmit">
+
+        </div>
+
+        <div class="resultParas">
+            <p class="result"></p>
+        </div>
+    </div>
+    <script>
+        const start = document.querySelector('.startbutton');
+        const intro = document.querySelector('.Starter');
+        const main = document.querySelector('.main');
+        start.addEventListener('click', () => {
+            intro.style.visibility = 'hidden';
+            main.style.visibility = 'visible';
+        });
+    </script>
+    <script>
+        const showrules = document.querySelector('.ruleshow');
+        showrules.addEventListener('click', () => {
+            intro.style.visibility = 'visible';
+        })
+    </script>
+    <script>
+        const startpoint = document.querySelector('.startpoint');
+        const endpoint = document.querySelector('.endpoint');
+        const numberSubmit = document.querySelector('.numberSubmit');
+        let result = document.querySelector('.result');
+
+        function SweetOrSalty() {
+            let start = Number(startpoint.value);
+            let end = Number(endpoint.value);
+            let perline = Number(Math.ceil((end - start) / 100));
+            let sweetNsalty = "";
+            for (i = 0; i <= end - start; i++) {
+                if ((i + start) % 3 == 0 && (i + start) % 5 == 0) {
+
+                    sweetNsalty += "Sweet and Salty";
+                } else if ((i + start) % 3 == 0) {
+
+                    sweetNsalty += "Sweet ";
+                } else if ((i + start) % 5 == 0) {
+
+                    sweetNsalty += "Salty ";
+                } else {
+
+                    sweetNsalty += ((i + start) + " ");
+                }
+                if (((i + 1) % perline) == 0) {
+                    sweetNsalty += "</br>";
+                }
+            }
+            result.innerHTML = sweetNsalty;
+        }
+
+
+
+
+        function validation() {
+            let start = Number(startpoint.value);
+            let end = Number(endpoint.value);
+            if ((end - start) < 200) {
+                result.innerHTML = ' 200 APART!';
+            } else if ((end - start) > 10000) {
+                result.innerHTML = 'END VALUE AND START VALUE ARE MORE THAN 10000 APART!';
+            } else {
+                SweetOrSalty();
+            }
+        }
+        numberSubmit.addEventListener('click', validation);
+    </script>
+
+</body>
+
+</html>
